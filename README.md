@@ -38,7 +38,8 @@ src/
   styles/global.css       # CSS copiado 1:1 do HTML original
   assets/                 # logos (extraídas do base64 do HTML)
   hooks/useRevealOnScroll.ts
-  lib/submitLead.ts       # ponto de integração do formulário (backend/CRM)
   components/             # Header, Hero, IntervalSection, HowItWorks, Services,
-                          # Security, Eligibility, LeadForm, Footer, StickyCta, Icons
+                          # Security, Eligibility, Footer, StickyCta, Icons
+  components/ContactLink.tsx  # URL do formulário externo (CTAs "Fale Conosco")
+  lib/campaignParams.ts   # repassa a query string (utm_*, gclid, fbclid...) para o formulário
 ```

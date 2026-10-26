@@ -728,6 +728,3 @@ footer{
   .footer-top{ grid-template-columns: 1fr; }
   .header-actions span.header-actions-full{ display: none; }
 }
-
-/* ---------- ADIÇÃO (não existia no HTML original): erro de envio do formulário ---------- */
-.form-error{ font-size: 14px; color: #F2B8A8; }

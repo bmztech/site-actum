@@ -1,4 +1,5 @@
 import logo from '../assets/logo-header.png'
+import { ContactLink } from './ContactLink'
 
 export function Header() {
   return (
@@ -19,9 +20,7 @@ export function Header() {
         </nav>
 
         <div className="header-actions">
-          <a href="#formulario" className="btn btn-primary">
-            Fale Conosco
-          </a>
+          <ContactLink className="btn btn-primary">Fale Conosco</ContactLink>
         </div>
       </div>
     </header>

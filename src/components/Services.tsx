@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { ContactLink } from './ContactLink'
 import { EyeIcon, SearchIcon, ShieldIcon } from './Icons'
 
 const pillars: { icon: ReactNode; title: string; text: string }[] = [
@@ -43,9 +44,9 @@ export function Services() {
           ))}
         </div>
 
-        <a href="#formulario" className="btn btn-outline-dark reveal">
+        <ContactLink className="btn btn-outline-dark reveal">
           Quero entender mais <span className="btn-arrow">→</span>
-        </a>
+        </ContactLink>
       </div>
     </section>
   )

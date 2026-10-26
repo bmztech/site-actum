@@ -1,20 +1,15 @@
 import { useEffect, useState } from 'react'
+import { ContactLink } from './ContactLink'
 
-// Aparece depois que o hero sai da tela e some enquanto o formulário estiver visível.
+// Aparece depois que o hero sai da tela.
 export function StickyCta() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const heroEl = document.querySelector('.hero')
-    const formEl = document.getElementById('formulario')
-    if (!heroEl || !formEl) return
+    if (!heroEl) return
 
-    const onScroll = () => {
-      const heroBottom = heroEl.getBoundingClientRect().bottom
-      const { top: formTop, bottom: formBottom } = formEl.getBoundingClientRect()
-      const withinForm = formTop < window.innerHeight && formBottom > 0
-      setVisible(heroBottom < 0 && !withinForm)
-    }
+    const onScroll = () => setVisible(heroEl.getBoundingClientRect().bottom < 0)
 
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -22,9 +17,7 @@ export function StickyCta() {
 
   return (
     <div className={'sticky-cta' + (visible ? ' visible' : '')} id="stickyCta">
-      <a href="#formulario" className="btn btn-primary">
-        Quero saber se posso receber antes
-      </a>
+      <ContactLink className="btn btn-primary">Quero saber se posso receber antes</ContactLink>
     </div>
   )
 }

@@ -1,3 +1,5 @@
+import { ContactLink } from './ContactLink'
+
 const steps = [
   {
     num: '01',
@@ -42,9 +44,9 @@ export function HowItWorks() {
           ))}
         </div>
 
-        <a href="#formulario" className="btn btn-outline-dark reveal">
+        <ContactLink className="btn btn-outline-dark reveal">
           Quero entender como funciona no meu caso <span className="btn-arrow">→</span>
-        </a>
+        </ContactLink>
       </div>
     </section>
   )

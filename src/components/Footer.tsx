@@ -1,4 +1,5 @@
 import logo from '../assets/logo-footer.png'
+import { ContactLink } from './ContactLink'
 
 export function Footer() {
   return (
@@ -22,7 +23,7 @@ export function Footer() {
               <li><a href="#top">Início</a></li>
               <li><a href="#quem-somos">Quem Somos</a></li>
               <li><a href="#servicos">Nossos Serviços</a></li>
-              <li><a href="#formulario">Contato</a></li>
+              <li><ContactLink>Contato</ContactLink></li>
             </ul>
           </div>
 

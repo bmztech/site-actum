@@ -1,3 +1,4 @@
+import { ContactLink } from './ContactLink'
 import { ArrowRightIcon, BoltIcon, CalendarIcon, CheckIcon, ClockIcon } from './Icons'
 
 function StageArrow() {
@@ -20,9 +21,9 @@ export function Hero() {
             esteja disponível imediatamente. Analisamos, com critério técnico e responsabilidade, se existe a
             possibilidade de antecipar o seu crédito judicial.
           </p>
-          <a href="#formulario" className="btn btn-primary">
+          <ContactLink className="btn btn-primary">
             Quero saber se posso receber antes <span className="btn-arrow">→</span>
-          </a>
+          </ContactLink>
         </div>
 
         <div className="hero-score-card reveal">

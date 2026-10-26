@@ -1,3 +1,5 @@
+import { ContactLink } from './ContactLink'
+
 const consequences = [
   'Decisões importantes ficam adiadas.',
   'Planos que dependem desse valor não avançam.',
@@ -32,9 +34,9 @@ export function IntervalSection() {
           abrir mão da segurança jurídica.
         </p>
 
-        <a href="#formulario" className="btn btn-primary reveal">
+        <ContactLink className="btn btn-primary reveal">
           Quero analisar minhas opções agora <span className="btn-arrow">→</span>
-        </a>
+        </ContactLink>
 
         <p className="pull-quote reveal">Não se trata de discutir o direito. Isso já foi resolvido.</p>
       </div>

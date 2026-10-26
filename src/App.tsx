@@ -4,7 +4,6 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { HowItWorks } from './components/HowItWorks'
 import { IntervalSection } from './components/IntervalSection'
-import { LeadForm } from './components/LeadForm'
 import { Security } from './components/Security'
 import { Services } from './components/Services'
 import { StickyCta } from './components/StickyCta'
@@ -22,7 +21,6 @@ export default function App() {
       <Services />
       <Security />
       <Eligibility />
-      <LeadForm />
       <Footer />
       <StickyCta />
     </>
