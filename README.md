@@ -1,10 +1,10 @@
 # Actum Precatórios — site (React + TypeScript + Vite)
 
-Réplica do `actum-precatorios-atualizado(9).html` em React/TS, rodando em Node.
+Landing page da Actum Precatórios em React + TypeScript (Vite), servida por Node/Express em produção.
 
 ## Requisitos
 
-- Node 20+ (testado com Node 24)
+- Node 22.12+ (testado com Node 24)
 
 ## Comandos
 
@@ -14,7 +14,20 @@ npm run dev       # servidor de desenvolvimento (http://localhost:5173)
 npm run build     # typecheck + build de produção em dist/
 npm run preview   # serve o build de dist/
 npm run lint      # oxlint
+npm start         # servidor de produção (server.js, Express) servindo dist/ na porta $PORT ou 3000
 ```
+
+## Deploy (Hostinger — Node.js Web App)
+
+| Campo            | Valor           |
+| ---------------- | --------------- |
+| Framework preset | Express         |
+| Branch           | main            |
+| Node.js version  | 22 ou 24        |
+| Build command    | `npm run build` |
+| Entry file       | `server.js`     |
+
+Alternativa sem processo Node: preset **React + Vite**, output directory `dist`, sem entry file.
 
 ## Estrutura
 
